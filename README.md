@@ -1,3 +1,3 @@
 # GymApp
 
-Simple Gym app to track weights and sets
+Simple Gym App to track weights and sets
