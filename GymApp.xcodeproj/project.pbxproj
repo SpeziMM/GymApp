@@ -11,6 +11,12 @@
 		F7CB5E8B28C3A8D900EF8C9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5E8A28C3A8D900EF8C9B /* ContentView.swift */; };
 		F7CB5E8D28C3A8DA00EF8C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CB5E8C28C3A8DA00EF8C9B /* Assets.xcassets */; };
 		F7CB5E9028C3A8DA00EF8C9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CB5E8F28C3A8DA00EF8C9B /* Preview Assets.xcassets */; };
+		F7CB5E9728C3A9CA00EF8C9B /* ExerciseViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5E9628C3A9CA00EF8C9B /* ExerciseViewer.swift */; };
+		F7CB5E9D28C3AA4A00EF8C9B /* WeightSetterViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5E9C28C3AA4A00EF8C9B /* WeightSetterViewer.swift */; };
+		F7CB5E9F28C3AA7300EF8C9B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5E9E28C3AA7300EF8C9B /* TimerView.swift */; };
+		F7CB5EA128C3AAA700EF8C9B /* StopWatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5EA028C3AAA700EF8C9B /* StopWatchManager.swift */; };
+		F7CB5EA328C3AAF700EF8C9B /* TextFieldDynamicWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5EA228C3AAF700EF8C9B /* TextFieldDynamicWidth.swift */; };
+		F7CB5EA528C3AB1600EF8C9B /* RepsViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5EA428C3AB1600EF8C9B /* RepsViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		F7CB5E8A28C3A8D900EF8C9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7CB5E8C28C3A8DA00EF8C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7CB5E8F28C3A8DA00EF8C9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7CB5E9628C3A9CA00EF8C9B /* ExerciseViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewer.swift; sourceTree = "<group>"; };
+		F7CB5E9C28C3AA4A00EF8C9B /* WeightSetterViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightSetterViewer.swift; sourceTree = "<group>"; };
+		F7CB5E9E28C3AA7300EF8C9B /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		F7CB5EA028C3AAA700EF8C9B /* StopWatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchManager.swift; sourceTree = "<group>"; };
+		F7CB5EA228C3AAF700EF8C9B /* TextFieldDynamicWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDynamicWidth.swift; sourceTree = "<group>"; };
+		F7CB5EA428C3AB1600EF8C9B /* RepsViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepsViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,14 @@
 		F7CB5E8728C3A8D900EF8C9B /* GymApp */ = {
 			isa = PBXGroup;
 			children = (
+				F7CB5E9E28C3AA7300EF8C9B /* TimerView.swift */,
 				F7CB5E8828C3A8D900EF8C9B /* GymAppApp.swift */,
 				F7CB5E8A28C3A8D900EF8C9B /* ContentView.swift */,
+				F7CB5E9628C3A9CA00EF8C9B /* ExerciseViewer.swift */,
+				F7CB5EA428C3AB1600EF8C9B /* RepsViewer.swift */,
+				F7CB5EA028C3AAA700EF8C9B /* StopWatchManager.swift */,
+				F7CB5E9C28C3AA4A00EF8C9B /* WeightSetterViewer.swift */,
+				F7CB5EA228C3AAF700EF8C9B /* TextFieldDynamicWidth.swift */,
 				F7CB5E8C28C3A8DA00EF8C9B /* Assets.xcassets */,
 				F7CB5E8E28C3A8DA00EF8C9B /* Preview Content */,
 			);
@@ -137,8 +155,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CB5E9F28C3AA7300EF8C9B /* TimerView.swift in Sources */,
+				F7CB5EA128C3AAA700EF8C9B /* StopWatchManager.swift in Sources */,
+				F7CB5E9D28C3AA4A00EF8C9B /* WeightSetterViewer.swift in Sources */,
 				F7CB5E8B28C3A8D900EF8C9B /* ContentView.swift in Sources */,
 				F7CB5E8928C3A8D900EF8C9B /* GymAppApp.swift in Sources */,
+				F7CB5EA328C3AAF700EF8C9B /* TextFieldDynamicWidth.swift in Sources */,
+				F7CB5E9728C3A9CA00EF8C9B /* ExerciseViewer.swift in Sources */,
+				F7CB5EA528C3AB1600EF8C9B /* RepsViewer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
