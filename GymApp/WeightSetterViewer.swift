@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct WeightSetterViewer: View{
+    /// current selected Set
     @Binding var gymSet: GymSet
     let weight_increase: Double = 0.25
-    // time in 100ms after which increase get accelerated
+    /// time in 100ms after which increase get accelerated -> the longer u holt button -> the faster weight gets increased
     let timeIncreaseSpeed: Int8 = 5
-    // maximum possible weight
+    /// maximum possible weight
     let maxWeight: Double = 500.0
+    /// timer to differentiate long and short press on button
     @State private var timer: Timer?
+    /// state to detect if button was pressed long
     @State var isLongPressing = false
+    /// string for displaying weight in KG
     @State var helperString: String  = "20.0 KG"
     var body: some View{
         HStack{

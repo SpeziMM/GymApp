@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// helper view to create a dynamic Texfield (that can change size, to fit)
 struct TextFieldDynamicWidth: View {
     let title: String
     @Binding var text: String

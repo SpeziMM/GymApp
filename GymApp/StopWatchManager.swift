@@ -3,7 +3,7 @@
 //  Gymhelper
 //
 //  Created by Magnus Müller on 30.08.22.
-//
+// Use template timer from www.BLCKBIRDS.com
 
 
 //File: StopWatchManager.swift

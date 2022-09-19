@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+// View to select Rep Amount
 struct RepsViewer: View{
     @Binding var gymSet: GymSet
     var body: some View{

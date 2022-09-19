@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7179DDB28D8CA83001D20D5 /* WorkoutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7179DDA28D8CA83001D20D5 /* WorkoutNavigation.swift */; };
+		F7C3104D28D7C1650067A7BD /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3104C28D7C1650067A7BD /* AddWorkoutView.swift */; };
+		F7C3104F28D7C2CF0067A7BD /* WorkoutSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3104E28D7C2CF0067A7BD /* WorkoutSelectionView.swift */; };
+		F7C3105328D7C8690067A7BD /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3105228D7C8690067A7BD /* Exercise.swift */; };
+		F7C3105528D7CACA0067A7BD /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C3105428D7CACA0067A7BD /* WorkoutViewModel.swift */; };
 		F7CB5E8928C3A8D900EF8C9B /* GymAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5E8828C3A8D900EF8C9B /* GymAppApp.swift */; };
 		F7CB5E8B28C3A8D900EF8C9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CB5E8A28C3A8D900EF8C9B /* ContentView.swift */; };
 		F7CB5E8D28C3A8DA00EF8C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7CB5E8C28C3A8DA00EF8C9B /* Assets.xcassets */; };
@@ -20,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7179DDA28D8CA83001D20D5 /* WorkoutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutNavigation.swift; sourceTree = "<group>"; };
+		F7C3104C28D7C1650067A7BD /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		F7C3104E28D7C2CF0067A7BD /* WorkoutSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSelectionView.swift; sourceTree = "<group>"; };
+		F7C3105228D7C8690067A7BD /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		F7C3105428D7CACA0067A7BD /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		F7CB5E8528C3A8D900EF8C9B /* GymApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CB5E8828C3A8D900EF8C9B /* GymAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymAppApp.swift; sourceTree = "<group>"; };
 		F7CB5E8A28C3A8D900EF8C9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,8 +74,13 @@
 			isa = PBXGroup;
 			children = (
 				F7CB5E9E28C3AA7300EF8C9B /* TimerView.swift */,
+				F7C3104E28D7C2CF0067A7BD /* WorkoutSelectionView.swift */,
+				F7C3104C28D7C1650067A7BD /* AddWorkoutView.swift */,
+				F7179DDA28D8CA83001D20D5 /* WorkoutNavigation.swift */,
 				F7CB5E8828C3A8D900EF8C9B /* GymAppApp.swift */,
 				F7CB5E8A28C3A8D900EF8C9B /* ContentView.swift */,
+				F7C3105228D7C8690067A7BD /* Exercise.swift */,
+				F7C3105428D7CACA0067A7BD /* WorkoutViewModel.swift */,
 				F7CB5E9628C3A9CA00EF8C9B /* ExerciseViewer.swift */,
 				F7CB5EA428C3AB1600EF8C9B /* RepsViewer.swift */,
 				F7CB5EA028C3AAA700EF8C9B /* StopWatchManager.swift */,
@@ -155,11 +170,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7179DDB28D8CA83001D20D5 /* WorkoutNavigation.swift in Sources */,
+				F7C3105528D7CACA0067A7BD /* WorkoutViewModel.swift in Sources */,
 				F7CB5E9F28C3AA7300EF8C9B /* TimerView.swift in Sources */,
 				F7CB5EA128C3AAA700EF8C9B /* StopWatchManager.swift in Sources */,
 				F7CB5E9D28C3AA4A00EF8C9B /* WeightSetterViewer.swift in Sources */,
+				F7C3104F28D7C2CF0067A7BD /* WorkoutSelectionView.swift in Sources */,
 				F7CB5E8B28C3A8D900EF8C9B /* ContentView.swift in Sources */,
 				F7CB5E8928C3A8D900EF8C9B /* GymAppApp.swift in Sources */,
+				F7C3104D28D7C1650067A7BD /* AddWorkoutView.swift in Sources */,
+				F7C3105328D7C8690067A7BD /* Exercise.swift in Sources */,
 				F7CB5EA328C3AAF700EF8C9B /* TextFieldDynamicWidth.swift in Sources */,
 				F7CB5E9728C3A9CA00EF8C9B /* ExerciseViewer.swift in Sources */,
 				F7CB5EA528C3AB1600EF8C9B /* RepsViewer.swift in Sources */,
@@ -297,8 +317,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,8 +347,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,13 +7,13 @@
 
 import SwiftUI
 
+// displays one Exercise with its data
 struct ExerciseViewer: View {
-    @EnvironmentObject var viewModel: ExercisesViewModel
+    /// instance that stores the data of a Workout
+    @EnvironmentObject var viewModel: WorkoutViewModel
+    /// instance that stores the data of the current Exercise
     @State var currExercise: Exercise
     var idf: UUID
-//    @State var text: String = "Exercise"
-    //    @State var currWeight:String = "20"
-
     var body: some View{
          ScrollView{
             HStack {
