@@ -33,16 +33,17 @@ class WorkoutViewModel: ObservableObject {
     }
     // delete Exercise from instance
     func removeExercise(idf : UUID){
-        let idx = exercs.firstIndex(where: {$0.id == idf}) ?? 0
+        guard let idx = exercs.firstIndex(where: {$0.id == idf}) else { return }
         exercs.remove(at: idx)
-        //exercs.remove(firstIndex(where: $0.id = idf))
     }
     // add Exercise with default values
     func addExercise(){
         exercs.append(Exercise())
     }
     func getExercise(idf: UUID) -> Exercise{
-        let idx = self.exercs.firstIndex(where: {$0.id == idf}) ?? 0
+        guard let idx = self.exercs.firstIndex(where: {$0.id == idf}) else {
+            return Exercise()
+        }
         return self.exercs[idx]
     }
     

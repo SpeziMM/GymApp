@@ -11,8 +11,6 @@ import SwiftUI
 struct ExerciseViewer: View {
     /// instance that stores the data of a Workout
     @EnvironmentObject var viewModel: WorkoutViewModel
-    /// instance that stores the data of the current Exercise
-    @State var currExercise: Exercise
     var idf: UUID
     var body: some View{
          ScrollView{

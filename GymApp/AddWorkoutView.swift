@@ -14,7 +14,7 @@ struct AddWorkoutView: View{
     /// name of the new workout
     @State var workout: String = ""
     /// state to exit view back to  workoutNavigation
-    @Binding var ifAddWorkout: Bool
+    @Binding var isAddingWorkout: Bool
     /// error message for invalid input
     @State var errorMessage = ""
     var body: some View{
@@ -29,7 +29,7 @@ struct AddWorkoutView: View{
                 .padding(.leading,10)
                 .padding(.top, 10)
                 .padding(.bottom,25)
-                .onChange(of: workout){[workout] newValue in
+                .onChange(of: workout){ _, _ in
                     errorMessage = ""
                 }
            
@@ -38,7 +38,7 @@ struct AddWorkoutView: View{
                     errorMessage = "invalid input"
                 }else{
                     addWorkout(workout: workout)
-                    ifAddWorkout = false
+                    isAddingWorkout = false
                 }
             }
         }
@@ -54,6 +54,6 @@ struct AddWorkoutView: View{
 
 struct AddWorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        AddWorkoutView(workouts: .constant(["Default Workout"]), ifAddWorkout: .constant(true))
+        AddWorkoutView(workouts: .constant(["Default Workout"]), isAddingWorkout: .constant(true))
     }
 }

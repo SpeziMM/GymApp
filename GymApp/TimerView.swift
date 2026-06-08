@@ -33,9 +33,9 @@ struct MultiPicker: View  {
     var body: some View {
         GeometryReader { geometry in
             HStack {
-                ForEach(0..<self.data.count) { column in
+                ForEach(0..<self.data.count, id: \.self) { column in
                     Picker(self.data[column].0, selection: self.$selection[column]) {
-                        ForEach(0..<self.data[column].1.count) { row in
+                        ForEach(0..<self.data[column].1.count, id: \.self) { row in
                             Text(verbatim: self.data[column].1[row])
                             .tag(self.data[column].1[row])
                         }
@@ -59,7 +59,7 @@ struct TimerView: View {
     @State var selection: [String] = [0, 0].map { "\($0)" }
 
     
-    @ObservedObject var stopWatchManager = StopWatchManager()
+    @StateObject private var stopWatchManager = StopWatchManager()
     @State var selectedTime: Int = 0
     
     func calcCurrTime()-> Double{

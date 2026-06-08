@@ -10,54 +10,54 @@ import SwiftUI
 
 // main NavigationView to select a workout
 struct WorkoutNavigation: View {
-    /// perform nevagation to ContentView if true
-    @State var isActive = false
-    /// perform nevagation to addWorkoutView if true
-    @State var ifAddWorkout = false
-    /// selected workout
-    @State var selection = "Workout"
     /// stores the names of all workouts (with UserDefaults)
-    @State var workouts = UserDefaults.standard.array(forKey: "Workouts") as? [String] ?? []
+    @State private var workouts = Self.loadWorkouts()
+    /// presents the add-workout screen
+    @State private var isAddingWorkout = false
 
     var body: some View {
-        NavigationView{
+        NavigationStack {
             VStack{
                 Text("Work Out")
                     .bold()
                     .font(.system(size: 30))
                 ScrollView(){
-                    
                     Spacer()
                     ForEach(workouts , id: \.self){workout in
-                        WorkoutSelectionView(name: workout, isActive: $isActive,selection: $selection, workOuts: $workouts)
-                        .onDisappear(){
-                                UserDefaults.standard.set(workouts, forKey: "Workouts")
-                            }
+                        WorkoutSelectionView(name: workout, workOuts: $workouts)
                     }
-                    
-                    NavigationLink(destination: ContentView(viewModel: WorkoutViewModel(workoutName: selection)), isActive: $isActive) {EmptyView()
-                    }
-                    NavigationLink(destination: AddWorkoutView(workouts: $workouts, ifAddWorkout: $ifAddWorkout), isActive: $ifAddWorkout) {EmptyView()
-                    }
-
                 }
                 .cornerRadius(20)
-                AddWorkoutButton(ifAddWorkout: $ifAddWorkout)
+                AddWorkoutButton(isAddingWorkout: $isAddingWorkout)
                     .padding()
             }
-
             Spacer()
         }
-        
+        .sheet(isPresented: $isAddingWorkout) {
+            AddWorkoutView(workouts: $workouts, isAddingWorkout: $isAddingWorkout)
+                .presentationDetents([.height(180)])
+        }
+        .onChange(of: workouts) { _, newWorkouts in
+            UserDefaults.standard.set(newWorkouts, forKey: "Workouts")
+        }
+    }
+
+    private static func loadWorkouts() -> [String] {
+        let savedWorkouts = UserDefaults.standard.array(forKey: "Workouts") as? [String] ?? []
+        guard savedWorkouts.isEmpty else { return savedWorkouts }
+
+        let defaultWorkouts = ["Demo Workout"]
+        UserDefaults.standard.set(defaultWorkouts, forKey: "Workouts")
+        return defaultWorkouts
     }
 }
 
 // adds workout to "workouts" with button press after navigation to AddWorkoutView
 struct AddWorkoutButton: View{
-    @Binding var ifAddWorkout: Bool
+    @Binding var isAddingWorkout: Bool
     var body: some View{
         Button(action:{
-                ifAddWorkout = true
+                isAddingWorkout = true
             }, label: {
                 Image(systemName: "plus.circle.fill")
                 .symbolRenderingMode(.palette)

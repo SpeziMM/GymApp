@@ -10,65 +10,51 @@ import SwiftUI
 struct ContentView: View {
     /// stores the workout data
     @ObservedObject var viewModel: WorkoutViewModel
-    /// state to switch between Stack of ExerciseViewers and Timer
-    @State var isHome = true
     
     var body: some View {
-        VStack{
-            // exercise screen
-            if(isHome){
-                ZStack{
-                    BackgroundView()
-                    VStack{
-                        Spacer(minLength: 30)
-                        ScrollView {
-                            ForEach(viewModel.exercs){exercise in
-                                if(viewModel.exercs.isEmpty){
-                                }else{
-                                    ExerciseViewer(currExercise: exercise ,idf: exercise.id).environmentObject(viewModel)
-                                }
-                                
-                            }
+        TabView {
+            ZStack{
+                BackgroundView()
+                VStack{
+                    Spacer(minLength: 30)
+                    ScrollView {
+                        ForEach(viewModel.exercs){exercise in
+                            ExerciseViewer(idf: exercise.id).environmentObject(viewModel)
                         }
-                        .cornerRadius(20)
-                        Spacer(minLength: 25)
-                        addExerciseButton(viewModel: viewModel)
-                            .padding(.bottom)
-                                        
                     }
-                }
-                .padding(.top)
-                .cornerRadius(20)
-                .onReceive(NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification), perform: { output in
-                    viewModel.save()
-                })
-            // timer screen
-            } else {
-                ZStack{
-                    BackgroundView()
-                    VStack{
-                        Spacer(minLength: 20)
-                        TimerView()
-                            .frame(width: 300, height: 200, alignment: .topLeading)
-                        Spacer(minLength: 20)
-
-                    }
+                    .cornerRadius(20)
+                    Spacer(minLength: 25)
+                    addExerciseButton(viewModel: viewModel)
+                        .padding(.bottom)
                 }
             }
-            Spacer(minLength: 10)
-            // navigation buttons
-            HStack{
-                navigationWorkoutButton(isHome: $isHome)
-                    .padding(.trailing)
-                navigationButtonTimer(isHome: $isHome)
-                    .padding(.leading)
+            .padding(.top)
+            .cornerRadius(20)
+            .onReceive(NotificationCenter.default.publisher(for: UIApplication.didEnterBackgroundNotification), perform: { _ in
+                viewModel.save()
+            })
+            .onDisappear {
+                viewModel.save()
             }
-            Spacer(minLength: 20)
+            .tabItem {
+                Label("Workout", systemImage: "list.bullet.rectangle.portrait")
+            }
 
+            ZStack{
+                BackgroundView()
+                VStack{
+                    Spacer(minLength: 20)
+                    TimerView()
+                        .frame(width: 300, height: 200, alignment: .topLeading)
+                    Spacer(minLength: 20)
+                }
+            }
+            .tabItem {
+                Label("Timer", systemImage: "timer")
+            }
         }
         .background(.black)
-        
-        }
+    }
     
 }
 
@@ -144,4 +130,3 @@ struct navigationButtonTimer: View{
              .frame(alignment: .center)
     }
 }
-

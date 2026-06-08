@@ -32,7 +32,8 @@ struct Exercise: Identifiable, Codable{
     
     
     mutating func removeLastSet() {
-        sets.remove(at: sets.count-1)
+        guard !sets.isEmpty else { return }
+        sets.removeLast()
     }
     // add a Set with default values
     mutating func addSet(weight: String?,repAmt: Int?) {
