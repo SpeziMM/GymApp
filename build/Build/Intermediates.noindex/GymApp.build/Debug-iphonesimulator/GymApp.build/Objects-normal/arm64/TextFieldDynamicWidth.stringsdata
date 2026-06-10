@@ -1,0 +1,16 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/TextFieldDynamicWidth.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "KG",
+        "location": {
+          "startingColumn": 16,
+          "startingLine": 63
+        }
+      }
+    ]
+  },
+  "version": 1
+}

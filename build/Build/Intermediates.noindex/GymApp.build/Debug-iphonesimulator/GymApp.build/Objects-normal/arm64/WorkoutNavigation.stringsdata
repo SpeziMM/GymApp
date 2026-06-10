@@ -1,0 +1,32 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/WorkoutNavigation.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Workouts",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "No workouts yet",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tap the + button to add one.",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 40
+        }
+      }
+    ]
+  },
+  "version": 1
+}

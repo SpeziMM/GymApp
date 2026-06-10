@@ -1,0 +1,32 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/AddWorkoutView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Add Workout",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "select your workout name",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 23
+        }
+      },
+      {
+        "comment": "",
+        "key": "confirm",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 28
+        }
+      }
+    ]
+  },
+  "version": 1
+}

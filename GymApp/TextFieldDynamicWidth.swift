@@ -15,14 +15,20 @@ struct TextFieldDynamicWidth: View {
     let onCommit: () -> Void
     
     @State private var textRect = CGRect()
+    @FocusState private var isFocused: Bool
     
     var body: some View {
         ZStack {
             Text(text == "" ? title : text).background(GlobalGeometryGetter(rect: $textRect)).layoutPriority(1).opacity(0)
             HStack {
-                TextField(title, text: $text, onEditingChanged: onEditingChanged, onCommit: onCommit)
-                .frame(width: textRect.width)
-                .foregroundColor(.blue)
+                TextField(title, text: $text)
+                    .focused($isFocused)
+                    .onChange(of: isFocused) { _, newValue in
+                        onEditingChanged(newValue)
+                    }
+                    .onSubmit(onCommit)
+                    .frame(width: textRect.width)
+                    .foregroundColor(.blue)
             }
         }
     }

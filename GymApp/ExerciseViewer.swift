@@ -11,108 +11,88 @@ import SwiftUI
 struct ExerciseViewer: View {
     /// instance that stores the data of a Workout
     @EnvironmentObject var viewModel: WorkoutViewModel
-    /// instance that stores the data of the current Exercise
-    @State var currExercise: Exercise
     var idf: UUID
     var body: some View{
-         ScrollView{
+        VStack(spacing: 16) {
             HStack {
-                Spacer(minLength: 80)
                 if let idx = viewModel.exercs.firstIndex(where: {$0.id == idf}){
-                    TextField("Exercise",text:$viewModel.exercs[idx].name)
-                    .frame(width: 150, alignment: .center)
-                    .font(.system(size: 25))
-                    .multilineTextAlignment(.center)
+                    TextField("Exercise name", text: $viewModel.exercs[idx].name)
+                        .font(.title3)
+                        .textFieldStyle(.roundedBorder)
+                        .padding(.vertical, 6)
                 }
-                Spacer(minLength: 65)
                 Button(action:{
                     viewModel.removeExercise(idf: idf)
                        }, label: {
                         Image(systemName: "xmark.circle.fill")
-                        .symbolRenderingMode(.palette)
-                        .resizable()
-                        .foregroundStyle(.red,  Color(red: 60 / 255, green: 60 / 255, blue: 60 / 255))
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 25, height: 25)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 22, height: 22)
+                            .foregroundColor(.red)
+                            .padding(.leading, 8)
                 })
-                Spacer(minLength: 5)
-                
             }
-             if let idx = viewModel.exercs.firstIndex(where: {$0.id == idf}){
-                 ForEach($viewModel.exercs[idx].sets) { currSet in
-                     VStack{
-                         WeightSetterViewer(gymSet: currSet)
-                         RepsViewer(gymSet: currSet)
-                     }
-                     .frame(width: 250, height: 100)
-                     .background(Color(red: 60 / 255, green: 60 / 255, blue: 60 / 255))
-                     .cornerRadius(20)
-                        
-                 
-                 
-                 }
-             }
-             
+            .padding(.horizontal, 12)
 
-            HStack{
+            if let idx = viewModel.exercs.firstIndex(where: {$0.id == idf}){
+                ForEach($viewModel.exercs[idx].sets) { currSet in
+                    VStack(spacing: 12){
+                        WeightSetterViewer(gymSet: currSet)
+                        RepsViewer(gymSet: currSet)
+                    }
+                    .padding(12)
+                    .background(Color(red: 0.94, green: 0.95, blue: 0.97))
+                    .cornerRadius(18)
+                }
+            }
+
+            HStack(spacing: 20) {
                 Button(action:{
                     if(viewModel.getExercise(idf: idf).setAmt()>1){
-                        //var currExercise: Exercise = viewModel.getExercise(idf: idf)
                         if let idx = viewModel.exercs.firstIndex(where: {$0.id == idf}){
                             viewModel.exercs[idx].removeLastSet()
                         }
                     }
                     }, label: {
                         Image(systemName: "minus.circle.fill")
-                        .symbolRenderingMode(.palette)
-                        .resizable()
-                        .foregroundStyle(.red, .green, .black)
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 50, height: 50)
-                })
-                
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32, height: 32)
+                            .foregroundColor(.red)
+                    })
+
                 Text("set")
                     .bold()
-                    .font(.system(size: 21))
-                    .frame(width: 30, height: 50)
+                    .font(.body)
+                    .frame(width: 40, height: 36)
                     .multilineTextAlignment(.center)
-            
-                // plus button
+                    .foregroundColor(.primary)
+
                 Button(action:{
-                    //var currExercise: Exercise = viewModel.getExercise(idf: idf)
                     if let idx = viewModel.exercs.firstIndex(where: {$0.id == idf}){
                         let lastSet: GymSet = viewModel.exercs[idx].getLastSet()
                         viewModel.exercs[idx].addSet(weight: lastSet.weight, repAmt: lastSet.repAmt)
-                        
                     }
                 }, label: {
                     Image(systemName: "plus.circle.fill")
-                    .symbolRenderingMode(.palette)
-                    .resizable()
-                    .foregroundStyle(.blue, .green, .black)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 50, height: 50)
-                                    
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 32, height: 32)
+                        .foregroundColor(.green)
                 })
-                
             }
-            .frame(width: 175, height: 65, alignment: .center)
-            .background(LinearGradient(gradient: Gradient(colors: [.pink, .indigo]), startPoint: .leading, endPoint: .trailing)
-                .edgesIgnoringSafeArea(.all))
-            .cornerRadius(20)
+            .padding(.vertical, 10)
+            .frame(maxWidth: .infinity)
+            .background(Color(red: 0.94, green: 0.94, blue: 0.96))
+            .cornerRadius(18)
+            .padding(.horizontal, 12)
+            .padding(.bottom, 12)
         }
-        .frame(width: 325, height: 450, alignment: .center)
-        .background(.teal)
-        .cornerRadius(20)
-        
-
-        
+        .padding(.vertical, 16)
+        .frame(maxWidth: .infinity)
+        .background(Color(red: 0.98, green: 0.98, blue: 0.99))
+        .cornerRadius(22)
+        .shadow(color: Color.black.opacity(0.08), radius: 5, x: 0, y: 3)
+        .padding(.horizontal, 8)
     }
 }
-
-//struct ExerciseViewer_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ExerciseViewer(currExercise: Exercise(), idf: UUID())
-//            .environmentObject(ExercisesViewModel())
-//    }
-//}

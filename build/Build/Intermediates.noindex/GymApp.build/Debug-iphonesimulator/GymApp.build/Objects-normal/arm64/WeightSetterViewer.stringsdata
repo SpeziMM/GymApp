@@ -1,0 +1,16 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/WeightSetterViewer.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "KG",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 69
+        }
+      }
+    ]
+  },
+  "version": 1
+}

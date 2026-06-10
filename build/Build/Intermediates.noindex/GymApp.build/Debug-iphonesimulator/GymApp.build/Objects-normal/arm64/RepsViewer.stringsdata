@@ -1,0 +1,32 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/RepsViewer.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 14
+        }
+      },
+      {
+        "comment": "",
+        "key": "Picker",
+        "location": {
+          "startingColumn": 59,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      }
+    ]
+  },
+  "version": 1
+}

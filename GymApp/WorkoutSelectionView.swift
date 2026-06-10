@@ -10,52 +10,42 @@ import SwiftUI
 // view to select a certain workout -> navigate to it (from WorkoutNavigation -> ContentView)
 struct WorkoutSelectionView: View{
     /// name of workout
-    @State var name: String
-    /// binding for performing navigation to the data of a workout
-    @Binding var isActive: Bool
-    /// binding to tell to which workout should be navigated
-    @Binding var selection: String
+    let name: String
     /// list of all workouts
     @Binding var workOuts: [String]
     var body: some View{
-        HStack{
-            // navigation button
-            Button(action: {
-                isActive = true
-                selection = name },
-                   label: {
-                    Text(name)
-                    .frame(minWidth: 175,minHeight: 50)
-                    .background()
-                    .contentShape(Rectangle())
-                    .cornerRadius(20)
-                })
-            .padding(.leading,50)
-
-            // button to delete workout
-            Button(action:{
-                deleteWorkout()
-                   }, label: {
+        NavigationLink(destination: ContentView(viewModel: WorkoutViewModel(workoutName: name))) {
+            HStack(spacing: 12) {
+                Text(name)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                Spacer()
+                Button(action: {
+                    deleteWorkout()
+                }, label: {
                     Image(systemName: "xmark.circle.fill")
-                    .symbolRenderingMode(.palette)
-                    .resizable()
-                    .foregroundStyle(.red,  Color(red: 60 / 255, green: 60 / 255, blue: 60 / 255))
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 25, height: 25)
-                    .padding(.leading,25)
-                    .padding(.bottom,60)
-            })
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 22, height: 22)
+                        .foregroundColor(.red.opacity(0.8))
+                })
+                .buttonStyle(.plain)
+                Image(systemName: "chevron.right")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundColor(.secondary)
+            }
+            .padding(.horizontal, 18)
+            .padding(.vertical, 16)
+            .background(Color(red: 0.98, green: 0.98, blue: 0.99))
+            .cornerRadius(18)
+            .shadow(color: Color.black.opacity(0.06), radius: 4, x: 0, y: 2)
         }
-        .frame(width: 300, height: 100, alignment: .center)
-        .background(.red)
-        .cornerRadius(20)
-        
-        
+        .buttonStyle(.plain)
     }
     // delete Workout and remove data from Userdefaults
     func deleteWorkout(){
-        let idx = workOuts.firstIndex(where: {$0 == selection}) ?? 0
-        UserDefaults.standard.removeObject(forKey: selection)
+        guard let idx = workOuts.firstIndex(where: {$0 == name}) else { return }
+        UserDefaults.standard.removeObject(forKey: name)
         workOuts.remove(at: idx)
 
     }
@@ -63,6 +53,8 @@ struct WorkoutSelectionView: View{
 
 struct WorkoutSelectionView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutSelectionView(name: "default", isActive: .constant(false), selection: .constant("default"), workOuts: .constant(["default"]))
+        NavigationStack {
+            WorkoutSelectionView(name: "default", workOuts: .constant(["default"]))
+        }
     }
 }

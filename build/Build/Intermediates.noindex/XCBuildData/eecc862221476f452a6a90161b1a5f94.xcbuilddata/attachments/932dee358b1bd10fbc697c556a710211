@@ -1,0 +1,149 @@
+{
+  "" : {
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymApp-primary.dia",
+    "emit-module-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymApp-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymApp-primary-emit-module.dia",
+    "pch" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymApp-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymApp-primary.swiftdeps"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/AddWorkoutView.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/AddWorkoutView~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/ContentView.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/Exercise.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/Exercise~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/ExerciseViewer.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/ExerciseViewer~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/GymAppApp.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GymAppApp~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/RepsViewer.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/RepsViewer~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/StopWatchManager.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/StopWatchManager~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/TextFieldDynamicWidth.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TextFieldDynamicWidth~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/TimerView.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/TimerView~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/WeightSetterViewer.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WeightSetterViewer~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/WorkoutNavigation.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutNavigation~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/WorkoutSelectionView.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutSelectionView~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/WorkoutViewModel.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/WorkoutViewModel~partial.swiftmodule"
+  },
+  "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/GymApp.build/Debug-iphonesimulator/GymApp.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

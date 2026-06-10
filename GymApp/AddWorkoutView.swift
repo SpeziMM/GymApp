@@ -14,32 +14,26 @@ struct AddWorkoutView: View{
     /// name of the new workout
     @State var workout: String = ""
     /// state to exit view back to  workoutNavigation
-    @Binding var ifAddWorkout: Bool
+    @Binding var isAddingWorkout: Bool
     /// error message for invalid input
     @State var errorMessage = ""
     var body: some View{
-        VStack(spacing:0){
-            if(errorMessage != ""){
-                Text(errorMessage)
-                    .foregroundColor(.red)
-            }
-            TextField("select your workout name",text: $workout)
-                .frame(width: 225,height: 25)
-                .textFieldStyle(.roundedBorder)
-                .padding(.leading,10)
-                .padding(.top, 10)
-                .padding(.bottom,25)
-                .onChange(of: workout){[workout] newValue in
-                    errorMessage = ""
+        Form {
+            Section(header: Text("Add Workout"), footer: Text(errorMessage).foregroundColor(.red)) {
+                TextField("select your workout name", text: $workout)
+                    .onChange(of: workout){ _, _ in
+                        errorMessage = ""
+                    }
+                
+                Button("confirm"){
+                    if(workout == "" || workouts.contains(workout)){
+                        errorMessage = "invalid input"
+                    }else{
+                        addWorkout(workout: workout)
+                        isAddingWorkout = false
+                    }
                 }
-           
-            Button("confirm"){
-                if(workout == "" || workouts.contains(workout)){
-                    errorMessage = "invalid input"
-                }else{
-                    addWorkout(workout: workout)
-                    ifAddWorkout = false
-                }
+                .frame(maxWidth: .infinity, alignment: .center)
             }
         }
     }
@@ -54,6 +48,6 @@ struct AddWorkoutView: View{
 
 struct AddWorkoutView_Previews: PreviewProvider {
     static var previews: some View {
-        AddWorkoutView(workouts: .constant(["Default Workout"]), ifAddWorkout: .constant(true))
+        AddWorkoutView(workouts: .constant(["Default Workout"]), isAddingWorkout: .constant(true))
     }
 }

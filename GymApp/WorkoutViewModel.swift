@@ -10,6 +10,8 @@ import Foundation
 
 // class that stores the data of a workout (all corresponding exercise combined)
 class WorkoutViewModel: ObservableObject {
+    /// name of the standard workout that ships with a ready-made template
+    static let standardWorkoutName = "Demo Workout"
     /// name of the instace/workout
     var workoutName: String
     /// List that store the exercises of a workout
@@ -22,7 +24,25 @@ class WorkoutViewModel: ObservableObject {
                 return
             }
         }
-        exercs = [Exercise()]
+        exercs = Self.defaultExercises(for: workoutName)
+    }
+
+    // first-time contents for a freshly opened workout: the standard workout
+    // gets a full template, any other new workout starts with a single blank exercise
+    private static func defaultExercises(for workoutName: String) -> [Exercise] {
+        guard workoutName == standardWorkoutName else { return [Exercise()] }
+        return templateExercises()
+    }
+
+    // a ready-made push-day template used for the standard workout
+    private static func templateExercises() -> [Exercise] {
+        [
+            Exercise(name: "Bench Press", sets: [GymSet(weight: "40.00", repAmt: 10), GymSet(weight: "40.00", repAmt: 10), GymSet(weight: "40.00", repAmt: 8)]),
+            Exercise(name: "Incline Bench Press", sets: [GymSet(weight: "30.00", repAmt: 10), GymSet(weight: "30.00", repAmt: 8)]),
+            Exercise(name: "Butterfly", sets: [GymSet(weight: "25.00", repAmt: 12), GymSet(weight: "25.00", repAmt: 12)]),
+            Exercise(name: "Shoulder Press", sets: [GymSet(weight: "20.00", repAmt: 10), GymSet(weight: "20.00", repAmt: 10)]),
+            Exercise(name: "Triceps Push Down", sets: [GymSet(weight: "25.00", repAmt: 12), GymSet(weight: "25.00", repAmt: 12), GymSet(weight: "25.00", repAmt: 10)]),
+        ]
     }
     // save workout in UserDefaults
     func save(){
@@ -33,16 +53,17 @@ class WorkoutViewModel: ObservableObject {
     }
     // delete Exercise from instance
     func removeExercise(idf : UUID){
-        let idx = exercs.firstIndex(where: {$0.id == idf}) ?? 0
+        guard let idx = exercs.firstIndex(where: {$0.id == idf}) else { return }
         exercs.remove(at: idx)
-        //exercs.remove(firstIndex(where: $0.id = idf))
     }
     // add Exercise with default values
     func addExercise(){
         exercs.append(Exercise())
     }
     func getExercise(idf: UUID) -> Exercise{
-        let idx = self.exercs.firstIndex(where: {$0.id == idf}) ?? 0
+        guard let idx = self.exercs.firstIndex(where: {$0.id == idf}) else {
+            return Exercise()
+        }
         return self.exercs[idx]
     }
     
