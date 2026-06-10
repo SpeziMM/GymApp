@@ -1,8 +1,8 @@
 # GymApp
 
 A simple, fast iOS workout tracker built with SwiftUI. Create workouts, add exercises,
-and log your weights, reps, and sets — all stored locally on device. A fresh install
-comes with a ready-made **Push Day** template so you have content to explore right away.
+and log your weights, reps, and sets.
+This is a personal project I developed before starting formal CS studies, and I recently updated it to use modern SwiftUI features and made it compatible with the latest iOS versions.
 
 ### Features
 
