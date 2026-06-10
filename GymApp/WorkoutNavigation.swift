@@ -17,21 +17,48 @@ struct WorkoutNavigation: View {
 
     var body: some View {
         NavigationStack {
-            VStack{
-                Text("Work Out")
-                    .bold()
-                    .font(.system(size: 30))
-                ScrollView(){
-                    Spacer()
-                    ForEach(workouts , id: \.self){workout in
-                        WorkoutSelectionView(name: workout, workOuts: $workouts)
+            ZStack {
+                BackgroundView()
+                VStack(spacing: 0) {
+                    HStack {
+                        Text("Workouts")
+                            .font(.largeTitle.bold())
+                        Spacer()
                     }
+                    .padding(.horizontal, 20)
+                    .padding(.top, 8)
+
+                    if workouts.isEmpty {
+                        Spacer()
+                        VStack(spacing: 8) {
+                            Image(systemName: "dumbbell")
+                                .font(.system(size: 44))
+                                .foregroundColor(.secondary)
+                            Text("No workouts yet")
+                                .font(.headline)
+                                .foregroundColor(.secondary)
+                            Text("Tap the + button to add one.")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        Spacer()
+                    } else {
+                        ScrollView {
+                            VStack(spacing: 12) {
+                                ForEach(workouts, id: \.self) { workout in
+                                    WorkoutSelectionView(name: workout, workOuts: $workouts)
+                                }
+                            }
+                            .padding(.horizontal, 16)
+                            .padding(.top, 16)
+                            .padding(.bottom, 8)
+                        }
+                    }
+
+                    AddWorkoutButton(isAddingWorkout: $isAddingWorkout)
+                        .padding(.bottom, 16)
                 }
-                .cornerRadius(20)
-                AddWorkoutButton(isAddingWorkout: $isAddingWorkout)
-                    .padding()
             }
-            Spacer()
         }
         .sheet(isPresented: $isAddingWorkout) {
             AddWorkoutView(workouts: $workouts, isAddingWorkout: $isAddingWorkout)
@@ -46,7 +73,7 @@ struct WorkoutNavigation: View {
         let savedWorkouts = UserDefaults.standard.array(forKey: "Workouts") as? [String] ?? []
         guard savedWorkouts.isEmpty else { return savedWorkouts }
 
-        let defaultWorkouts = ["Demo Workout"]
+        let defaultWorkouts = [WorkoutViewModel.standardWorkoutName]
         UserDefaults.standard.set(defaultWorkouts, forKey: "Workouts")
         return defaultWorkouts
     }
@@ -59,12 +86,13 @@ struct AddWorkoutButton: View{
         Button(action:{
                 isAddingWorkout = true
             }, label: {
-                Image(systemName: "plus.circle.fill")
-                .symbolRenderingMode(.palette)
-                .resizable()
-                .foregroundStyle(.red, .green, .black)
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 50, height: 50)
+                Image(systemName: "plus")
+                    .font(.system(size: 26, weight: .semibold))
+                    .foregroundColor(.green)
+                    .frame(width: 56, height: 56)
+                    .background(Color(red: 0.98, green: 0.98, blue: 0.99))
+                    .clipShape(Circle())
+                    .shadow(color: Color.black.opacity(0.12), radius: 4, x: 0, y: 2)
         })
     }
     

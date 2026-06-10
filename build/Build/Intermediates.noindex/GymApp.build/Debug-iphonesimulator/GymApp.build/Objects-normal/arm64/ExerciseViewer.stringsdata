@@ -1,0 +1,24 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/ExerciseViewer.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Exercise name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "set",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 64
+        }
+      }
+    ]
+  },
+  "version": 1
+}

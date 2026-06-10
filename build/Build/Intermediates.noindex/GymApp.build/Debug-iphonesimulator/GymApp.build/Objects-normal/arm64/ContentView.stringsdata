@@ -1,0 +1,32 @@
+{
+  "source": "/Users/magnus/Documents/GithubProjects/GymApp/GymApp/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Workout",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Timer",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add exercise",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 85
+        }
+      }
+    ]
+  },
+  "version": 1
+}

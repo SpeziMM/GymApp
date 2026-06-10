@@ -18,28 +18,22 @@ struct AddWorkoutView: View{
     /// error message for invalid input
     @State var errorMessage = ""
     var body: some View{
-        VStack(spacing:0){
-            if(errorMessage != ""){
-                Text(errorMessage)
-                    .foregroundColor(.red)
-            }
-            TextField("select your workout name",text: $workout)
-                .frame(width: 225,height: 25)
-                .textFieldStyle(.roundedBorder)
-                .padding(.leading,10)
-                .padding(.top, 10)
-                .padding(.bottom,25)
-                .onChange(of: workout){ _, _ in
-                    errorMessage = ""
+        Form {
+            Section(header: Text("Add Workout"), footer: Text(errorMessage).foregroundColor(.red)) {
+                TextField("select your workout name", text: $workout)
+                    .onChange(of: workout){ _, _ in
+                        errorMessage = ""
+                    }
+                
+                Button("confirm"){
+                    if(workout == "" || workouts.contains(workout)){
+                        errorMessage = "invalid input"
+                    }else{
+                        addWorkout(workout: workout)
+                        isAddingWorkout = false
+                    }
                 }
-           
-            Button("confirm"){
-                if(workout == "" || workouts.contains(workout)){
-                    errorMessage = "invalid input"
-                }else{
-                    addWorkout(workout: workout)
-                    isAddingWorkout = false
-                }
+                .frame(maxWidth: .infinity, alignment: .center)
             }
         }
     }

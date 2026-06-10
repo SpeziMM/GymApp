@@ -1,0 +1,71 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "bfa22a4360f01e9e29ca5ab47d7eb3a470336b085ac430949f319e00ce09fe91"
+    }
+  ],
+  "containerPath" : "/Users/magnus/Documents/GithubProjects/GymApp/GymApp.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator26.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Products",
+      "derivedDataPath" : "/Users/magnus/Documents/GithubProjects/GymApp/build",
+      "indexDataStoreFolderPath" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/magnus/Documents/GithubProjects/GymApp/build/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone16,1",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone16,1",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "TARGET_DEVICE_IDENTIFIER" : "6D220EA4-88CF-44E9-A750-EBB1FFA957ED",
+          "TARGET_DEVICE_MODEL" : "iPhone16,1",
+          "TARGET_DEVICE_OS_VERSION" : "17.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
